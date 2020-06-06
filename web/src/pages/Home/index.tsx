@@ -16,8 +16,10 @@ const Home = () => {
 
         <main>
           <h1>Seu marketplace de coleta de resíduos.</h1>
-          <p>Ajudamos pessoas a encontrarem pontos de coleta de forma eficiente.</p>
-          <Link to='/create-point'>
+          <p>
+            Ajudamos pessoas a encontrarem pontos de coleta de forma eficiente.
+          </p>
+          <Link to="/create-point">
             <span>
               <FiLogIn />
             </span>
@@ -25,6 +27,7 @@ const Home = () => {
           </Link>
         </main>
       </div>
+      <div className="bg-home"></div>
     </div>
   );
 };
