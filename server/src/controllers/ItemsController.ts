@@ -1,5 +1,6 @@
 import { Request, Response } from 'express';
 import knex from '../database/connection';
+import { ip } from '../helpers/utils';
 
 class ItemsController {
   async index(request: Request, response: Response): Promise<unknown> {
@@ -9,7 +10,7 @@ class ItemsController {
       return {
         id: item.id,
         title: item.title,
-        image_url: `http://localhost:3333/uploads/${item.image}`,
+        image_url: `http://${ip}:3333/uploads/${item.image}`,
       };
     });
 
